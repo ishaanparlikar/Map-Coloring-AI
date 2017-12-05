@@ -35,11 +35,46 @@ def find_node(graph, name):
             return node
     return None
 
+def removeverts(graph, tree):
+    tempgraph = graph
+
+
+    for x in range(0, len(graph)):
+        if len(graph[x].adjacent) == 0 OR len(graph[x].adjacent) == 1:
+            tree.append(graph[x])
+            tempgraph.remove(graph[x])
+            for y in range(0, len(graph)):
+                tempgraph[y].remove_adjacent(graph[x].name)
+    return [tempgraph, tree]
+
+def removeadjacents(graph, name):
+    tempgraph = graph
+    for x in range(0, len(graph)):
+        tempgraph[x].remove_adjacent(graph[x].name)
+    return tempgraph
 
 def main():
     print("MAIN")
     test_valid()
+    tree = []
+    cutset = []
 
+    temp = removeverts(graph, tree)
+    graph = temp[0]
+    tree = temp[1]
+
+    biggestnode = graph[0];
+    biggest = 0;
+    while(graph):
+        for node in graph:
+            if(len(node.adjacent)>biggest):
+                biggest = len(node.adjacent)
+                biggestnode = node
+        cutset.append(node)
+        graph = remove_adjacent(graph, node.name)
+        temp = removeverts(graph, tree)
+        tree = temp[1]
+        graph = temp[0]
 
 def test_valid():
     graph = [Node("A", ["B", "C", "D"]),
