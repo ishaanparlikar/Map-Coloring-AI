@@ -40,7 +40,7 @@ def removeverts(graph, tree):
 
 
     for x in range(0, len(graph)):
-        if len(graph[x].adjacent) == 0 OR len(graph[x].adjacent) == 1:
+        if len(graph[x].adjacent) == 0 or len(graph[x].adjacent) == 1:
             tree.append(graph[x])
             tempgraph.remove(graph[x])
             for y in range(0, len(graph)):
