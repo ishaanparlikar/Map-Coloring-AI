@@ -81,6 +81,16 @@ def main():
         tree = temp[1]
         graph = temp[0]
 
+    for node in cutset:
+        if("R" in node.possible_colors):
+            node.assign_color("R")
+        elif("B" in node.possible_colors):
+            node.assign_color("B")
+        elif("G" in node.possible_colors):
+            node.assign_color("G")
+        elif("Y" in node.possible_colors):
+            node.assign_color("Y")
+
 def test_valid():
     graph = [Node("A", ["B", "C", "D"]),
              Node("B", ["A", "D"]),
