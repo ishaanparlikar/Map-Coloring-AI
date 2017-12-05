@@ -16,6 +16,11 @@ class Node:
     def get_degree(self):
         return len(self.adjacent)
 
+    def assign_color(self, color, graph):
+        self.color_picked = color
+        for node in self.adjacent:
+            find_node(graph, node).remove_color(color)
+
 
 def validity_check(graph):
     for node in graph:
