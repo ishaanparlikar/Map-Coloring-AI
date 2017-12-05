@@ -13,7 +13,10 @@ class Node:
         if color in self.possible_colors:
             self.possible_colors.remove(color)
 
-#dosent work yet
+    def get_degree(self):
+        return len(self.adjacent)
+
+
 def validity_check(graph):
     for node in graph:
         current_color = node.color_picked
@@ -29,7 +32,6 @@ def validity_check(graph):
 def find_node(graph, name):
     for node in graph:
         if node.name == name:
-            # print("Found " + node.name)
             return node
     return None
 
@@ -51,7 +53,7 @@ def test_valid():
     graph[2].color_picked = "G"
     graph[3].color_picked = "Y"
     graph[4].color_picked = "R"
-    graph[4].color_picked = "Y"
+    graph[5].color_picked = "Y"
 
     print(validity_check(graph))
 
