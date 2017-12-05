@@ -91,6 +91,19 @@ def main():
         elif("Y" in node.possible_colors):
             node.assign_color("Y")
 
+    donecoloring = True
+    while(donecoloring):
+        for nodes in temptree:
+            if(nodes.color_picked = None):
+                if(len(nodes.possible_colors) > 0):
+                    nodes.assign_color(nodes.possible_colors[0])
+                else:
+                    #RESTART COLORING *******************
+                donecoloring = True
+            else:
+                donecoloring= False;
+
+
 def test_valid():
     graph = [Node("A", ["B", "C", "D"]),
              Node("B", ["A", "D"]),
