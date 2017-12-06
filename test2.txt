@@ -1,0 +1,255 @@
+
+NODE AL
+=======
+Adjacent ['GA', 'FL', 'MS', 'TN']
+Color: R
+
+NODE AK
+=======
+Adjacent []
+Color: R
+
+NODE AZ
+=======
+Adjacent ['CA', 'NV', 'UT', 'CO', 'NM']
+Color: R
+
+NODE AR
+=======
+Adjacent ['TX', 'OK', 'MO', 'TN', 'MS', 'LA']
+Color: R
+
+NODE CA
+=======
+Adjacent ['OR', 'NV', 'AZ']
+Color: G
+
+NODE CO
+=======
+Adjacent ['NM', 'AZ', 'UT', 'WY', 'NE', 'KS', 'OK']
+Color: B
+
+NODE CT
+=======
+Adjacent ['RI', 'NY', 'MA']
+Color: R
+
+NODE DE
+=======
+Adjacent ['MD', 'PA', 'NJ']
+Color: B
+
+NODE DC
+=======
+Adjacent ['MD', 'VA']
+Color: R
+
+NODE FL
+=======
+Adjacent ['GA', 'AL']
+Color: G
+
+NODE GA
+=======
+Adjacent ['SC', 'NC', 'TN', 'AL', 'FL']
+Color: B
+
+NODE HI
+=======
+Adjacent []
+Color: R
+
+NODE ID
+=======
+Adjacent ['WA', 'OR', 'NV', 'UT', 'WY', 'MT']
+Color: Y
+
+NODE IL
+=======
+Adjacent ['WI', 'IA', 'MO', 'KY', 'IN']
+Color: Y
+
+NODE IN
+=======
+Adjacent ['IL', 'KY', 'OH', 'MI']
+Color: B
+
+NODE IA
+=======
+Adjacent ['MN', 'SD', 'NE', 'MO', 'IL', 'WI']
+Color: G
+
+NODE KS
+=======
+Adjacent ['CO', 'OK', 'MO', 'NE']
+Color: R
+
+NODE KY
+=======
+Adjacent ['MO', 'TN', 'VA', 'WV', 'OH', 'IN', 'IL']
+Color: R
+
+NODE LA
+=======
+Adjacent ['TX', 'AR', 'MS']
+Color: G
+
+NODE ME
+=======
+Adjacent ['NH']
+Color: R
+
+NODE MD
+=======
+Adjacent ['DE', 'PA', 'WV', 'DC', 'VA']
+Color: Y
+
+NODE MA
+=======
+Adjacent ['RI', 'CT', 'NY', 'VT', 'NH']
+Color: Y
+
+NODE MI
+=======
+Adjacent ['OH', 'IN', 'WI']
+Color: G
+
+NODE MN
+=======
+Adjacent ['WI', 'IA', 'SD', 'ND']
+Color: Y
+
+NODE MS
+=======
+Adjacent ['LA', 'AR', 'TN', 'AL']
+Color: B
+
+NODE MO
+=======
+Adjacent ['KS', 'NE', 'IA', 'IL', 'KY', 'TN', 'AR', 'OK']
+Color: B
+
+NODE MT
+=======
+Adjacent ['ID', 'WY', 'SD', 'ND']
+Color: G
+
+NODE NE
+=======
+Adjacent ['WY', 'SD', 'IA', 'MO', 'KS', 'CO']
+Color: Y
+
+NODE NV
+=======
+Adjacent ['CA', 'OR', 'ID', 'UT', 'AZ']
+Color: B
+
+NODE NH
+=======
+Adjacent ['ME', 'MA', 'VT']
+Color: B
+
+NODE NJ
+=======
+Adjacent ['NY', 'PA', 'DE']
+Color: G
+
+NODE NM
+=======
+Adjacent ['AZ', 'UT', 'CO', 'OK', 'TX']
+Color: Y
+
+NODE NY
+=======
+Adjacent ['PA', 'NJ', 'CT', 'MA', 'VT']
+Color: B
+
+NODE NC
+=======
+Adjacent ['VA', 'TN', 'GA', 'SC']
+Color: R
+
+NODE ND
+=======
+Adjacent ['MT', 'SD', 'MN']
+Color: R
+
+NODE OH
+=======
+Adjacent ['PA', 'WV', 'KY', 'IN', 'MI']
+Color: Y
+
+NODE OK
+=======
+Adjacent ['TX', 'NM', 'CO', 'KS', 'MO', 'AR']
+Color: G
+
+NODE OR
+=======
+Adjacent ['WA', 'ID', 'NV', 'CA']
+Color: R
+
+NODE PA
+=======
+Adjacent ['NY', 'NJ', 'DE', 'MD', 'WV', 'OH']
+Color: R
+
+NODE RI
+=======
+Adjacent ['CT', 'MA']
+Color: B
+
+NODE SC
+=======
+Adjacent ['GA', 'NC']
+Color: G
+
+NODE SD
+=======
+Adjacent ['WY', 'MT', 'ND', 'MN', 'IA', 'NE']
+Color: B
+
+NODE TN
+=======
+Adjacent ['AR', 'MO', 'KY', 'VA', 'NC', 'GA', 'AL', 'MS']
+Color: G
+
+NODE TX
+=======
+Adjacent ['NM', 'OK', 'AR', 'LA']
+Color: B
+
+NODE UT
+=======
+Adjacent ['CO', 'NM', 'AZ', 'NV', 'ID', 'WY']
+Color: G
+
+NODE VT
+=======
+Adjacent ['NY', 'MA', 'NH']
+Color: R
+
+NODE VA
+=======
+Adjacent ['NC', 'TN', 'KY', 'WV', 'MD', 'DC']
+Color: B
+
+NODE WA
+=======
+Adjacent ['ID', 'OR']
+Color: B
+
+NODE WV
+=======
+Adjacent ['KY', 'OH', 'PA', 'MD', 'VA']
+Color: G
+
+NODE WI
+=======
+Adjacent ['MN', 'IA', 'IL', 'MI']
+Color: R
+
+NODE WY
+=======
+Adjacent ['ID', 'MT', 'SD', 'NE', 'CO', 'UT']
+Color: R

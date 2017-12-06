@@ -1,8 +1,9 @@
 import random
 import copy
 
+
 class Node:
-    def __init__(self, name, adjacent=[]):
+    def __init__(self, name, adjacent=None):
         self.name = name
         self.adjacent = adjacent
         self.color_picked = None
@@ -50,7 +51,6 @@ class Node:
             return False
 
 
-
 def validity_check(graph):
     for node in graph:
         current_color = node.color_picked
@@ -69,17 +69,6 @@ def find_node(graph, name):
             return node
     return None
 
-def remove_verts(graph, tree):
-    tempgraph = graph
-
-
-    for x in range(0, len(graph)):
-        if len(graph[x].adjacent) == 0 or len(graph[x].adjacent) == 1:
-            tree.append(graph[x])
-            tempgraph.remove(graph[x])
-            for y in range(0, len(graph)):
-                tempgraph[y].remove_adjacent(graph[x].name)
-    return [tempgraph, tree]
 
 def remove_node_from_graph(graph, name):
     new_graph = copy.deepcopy(graph)
@@ -100,6 +89,7 @@ def reset_graph(graph):
         node.reset()
     return fresh_graph
 
+
 def is_graph_completely_colored(graph):
     for node in graph:
         if node.color_picked is None:
@@ -114,7 +104,6 @@ def color(cutset, trees, og_graph):
         for node in cutset:
             node_in_graph = find_node(colored_graph, node)
             node_in_graph.assign_color(random.choice(node_in_graph.possible_colors), colored_graph)
-
 
         while not is_graph_completely_colored(colored_graph):
             largest_degree_to_act_as_root = None
