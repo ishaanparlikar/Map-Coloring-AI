@@ -282,6 +282,8 @@ def main():
     for node in colored:
         node.print()
 
+    print("\nVerified: " + str(validity_check(colored)))
+
 
 if __name__ == "__main__":
     main()
