@@ -1,3 +1,8 @@
+# Talha Muhammad, Said Siraj
+# CS480 Fall 2017
+# Dr.  Duric
+# Project
+
 import random   # Used to randomly choose a color for cutset
 import copy     # Copy.deepcopy used to copy and preserve original objects in arrays
 
